@@ -1,0 +1,65 @@
+
+/* ====== Responsive Website Layout ====== */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #f4f4f4;
+}
+
+/* Header */
+header {
+    background-color: #333;
+    color: white;
+    padding: 15px;
+    text-align: center;
+}
+
+/* Navigation */
+nav {
+    background-color: #555;
+    display: flex;
+    justify-content: center;
+}
+
+nav a {
+    color: white;
+    padding: 14px 20px;
+    text-decoration: none;
+}
+
+nav a:hover {
+    background-color: #222;
+}
+
+/* Main Content */
+.main {
+    display: flex;
+    padding: 20px;
+}
+
+.content {
+    flex: 3;
+    background: white;
+    padding: 20px;
+    margin-right: 10px;
+}
+
+.sidebar {
+    flex: 1;
+    background: #ddd;
+    padding: 20px;
+}
+
+/* Footer */
+footer {
+    background: #333;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
