@@ -1,0 +1,25 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Daily Decision Helper</title>
+</head>
+<body>
+
+<h1>🧠 Daily Life Decision Helper</h1>
+
+<h3>What should I eat today?</h3>
+<ul>
+    <li>🍕 Pizza</li>
+    <li>🍛 Dal Rice</li>
+    <li>🥪 Sandwich</li>
+</ul>
+
+<h3>Today's Mood</h3>
+<p>😊 Happy | 😐 Neutral | 😔 Tired</p>
+
+<h3>One Task for Today</h3>
+<p>✔ Study 1 hour<br>✔ Drink Water<br>✔ Walk 20 min</p>
+
+</body>
+</html>
