@@ -1,0 +1,21 @@
+body{
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  height:100vh;
+  background:#000;
+}
+
+.ai-brain{
+  width:200px;
+  height:200px;
+  border-radius:50%;
+  background:radial-gradient(circle,#00f,#0ff);
+  box-shadow:0 0 40px #0ff,0 0 80px #00f;
+  animation:pulse 2s infinite alternate;
+}
+
+@keyframes pulse{
+  from{transform:scale(1);}
+  to{transform:scale(1.1);}
+}
