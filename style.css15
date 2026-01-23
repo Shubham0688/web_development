@@ -1,0 +1,26 @@
+body{
+  background:#000;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  height:100vh;
+}
+
+.ai-card{
+  width:260px;
+  height:160px;
+  background:#111;
+  border:2px solid #0ff;
+  box-shadow:0 0 20px #0ff;
+  position:relative;
+}
+
+.ai-card::after{
+  content:"AI SYSTEM";
+  color:#0ff;
+  position:absolute;
+  bottom:10px;
+  right:10px;
+  font-family:monospace;
+}
+
