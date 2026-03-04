@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Happy Holi Shubham</title>
+
+<style>
+body {
+    margin: 0;
+    overflow: hidden;
+    font-family: Arial, sans-serif;
+    text-align: center;
+    height: 100vh;
+    animation: bgAnimation 8s infinite alternate;
+}
+
+@keyframes bgAnimation {
+    0% { background: linear-gradient(45deg,#ff4e50,#f9d423); }
+    25% { background: linear-gradient(45deg,#24c6dc,#514a9d); }
+    50% { background: linear-gradient(45deg,#ff512f,#dd2476); }
+    75% { background: linear-gradient(45deg,#1fa2ff,#12d8fa); }
+    100% { background: linear-gradient(45deg,#f7971e,#ffd200); }
+}
+
+h1 {
+    color: white;
+    font-size: 65px;
+    margin-top: 18%;
+    text-shadow: 4px 4px 15px black;
+    animation: glow 2s infinite alternate;
+}
+
+@keyframes glow {
+    from { text-shadow: 0 0 10px white; }
+    to { text-shadow: 0 0 30px yellow; }
+}
+
+button {
+    padding: 15px 30px;
+    font-size: 20px;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    font-weight: bold;
+    margin-top: 20px;
+    background: white;
+    color: #ff4e50;
+}
+
+button:hover {
+    background: #ff4e50;
+    color: white;
+}
+
+/* Gulal */
+.gulal {
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    opacity: 0.8;
+    animation: fall linear infinite;
+}
+
+@keyframes fall {
+    from { transform: translateY(-10px); }
+    to { transform: translateY(100vh); }
+}
+
+/* Splash */
+.splash {
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    opacity: 0.5;
+    animation: splashAnim 1s ease-out forwards;
+}
+
+@keyframes splashAnim {
+    from { transform: scale(0); }
+    to { transform: scale(3); opacity: 0; }
+}
+
+/* Firework */
+.firework {
+    position: absolute;
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+    animation: explode 1s ease-out forwards;
+}
+
+@keyframes explode {
+    from { transform: scale(1); opacity: 1; }
+    to { transform: scale(20); opacity: 0; }
+}
+</style>
+</head>
+
+<body>
+
+<h1>🎉 Happy Holi Shubham 🎨</h1>
+<button onclick="startCelebration()">Celebrate Now 🎊</button>
+
+<audio id="holiMusic" loop>
+    <source src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3" type="audio/mp3">
+</audio>
+
+<script>
+
+function startCelebration() {
+
+    // Speak with Name
+    let msg = new SpeechSynthesisUtterance("Happy Holi Shubham! Wishing you a colorful and joyful life!");
+    msg.rate = 1;
+    msg.pitch = 1.2;
+    window.speechSynthesis.speak(msg);
+
+    // Play Music
+    document.getElementById("holiMusic").play();
+
+    // Splash Effect
+    for(let i=0;i<6;i++){
+        let splash = document.createElement("div");
+        splash.className = "splash";
+        splash.style.background = randomColor();
+        splash.style.left = Math.random()*window.innerWidth + "px";
+        splash.style.top = Math.random()*window.innerHeight + "px";
+        document.body.appendChild(splash);
+        setTimeout(()=> splash.remove(),1000);
+    }
+
+    // Fireworks
+    for(let i=0;i<12;i++){
+        let fire = document.createElement("div");
+        fire.className = "firework";
+        fire.style.left = Math.random()*window.innerWidth + "px";
+        fire.style.top = Math.random()*window.innerHeight + "px";
+        fire.style.background = randomColor();
+        document.body.appendChild(fire);
+        setTimeout(()=> fire.remove(),1000);
+    }
+}
+
+// Continuous Gulal Rain
+setInterval(()=>{
+    let gulal = document.createElement("div");
+    gulal.className = "gulal";
+    gulal.style.left = Math.random()*window.innerWidth + "px";
+    gulal.style.background = randomColor();
+    gulal.style.animationDuration = (2+Math.random()*3) + "s";
+    document.body.appendChild(gulal);
+    setTimeout(()=> gulal.remove(),5000);
+},200);
+
+function randomColor(){
+    let colors = ["#ff4e50","#f9d423","#24c6dc","#dd2476","#12d8fa","#ffd200","#ff00ff"];
+    return colors[Math.floor(Math.random()*colors.length)];
+}
+
+</script>
+
+</body>
+</html>
