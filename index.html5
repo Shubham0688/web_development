@@ -1,0 +1,95 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Amazon Clone - HTML</title>
+</head>
+<body>
+
+<!-- HEADER -->
+<table width="100%" bgcolor="#232F3E" cellpadding="10">
+    <tr>
+        <td>
+            <font color="white" size="6"><b>amazon.in</b></font>
+        </td>
+        <td align="right">
+            <font color="white">
+                Hello, Sign in | Returns & Orders | Cart 🛒
+            </font>
+        </td>
+    </tr>
+</table>
+
+<!-- SEARCH BAR -->
+<table width="100%" bgcolor="#febd69" cellpadding="10">
+    <tr>
+        <td align="center">
+            <input type="text" size="60" placeholder="Search Amazon.in">
+            <input type="button" value="Search">
+        </td>
+    </tr>
+</table>
+
+<!-- NAVBAR -->
+<table width="100%" bgcolor="#37475A" cellpadding="10">
+    <tr>
+        <td><font color="white">All</font></td>
+        <td><font color="white">Mobiles</font></td>
+        <td><font color="white">Fashion</font></td>
+        <td><font color="white">Electronics</font></td>
+        <td><font color="white">Home</font></td>
+        <td><font color="white">Deals</font></td>
+    </tr>
+</table>
+
+<br>
+
+<!-- PRODUCTS -->
+<table width="100%" cellpadding="20">
+    <tr align="center">
+        <td>
+            <img src="https://via.placeholder.com/150"><br>
+            <b>Smartphone</b><br>
+            ₹12,999<br>
+            <input type="button" value="Add to Cart">
+        </td>
+
+        <td>
+            <img src="https://via.placeholder.com/150"><br>
+            <b>Headphones</b><br>
+            ₹1,999<br>
+            <input type="button" value="Add to Cart">
+        </td>
+
+        <td>
+            <img src="https://via.placeholder.com/150"><br>
+            <b>Laptop</b><br>
+            ₹45,999<br>
+            <input type="button" value="Add to Cart">
+        </td>
+
+        <td>
+            <img src="https://via.placeholder.com/150"><br>
+            <b>Smart Watch</b><br>
+            ₹2,999<br>
+            <input type="button" value="Add to Cart">
+        </td>
+    </tr>
+</table>
+
+<br>
+
+<!-- FOOTER -->
+<table width="100%" bgcolor="#232F3E" cellpadding="15">
+    <tr>
+        <td align="center">
+            <font color="white">
+                © 2026 Amazon Clone | Created using HTML only
+            </font>
+        </td>
+    </tr>
+</table>
+
+</body>
+</html>

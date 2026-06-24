@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>My Blog</title>
+</head>
+<body>
+
+<h1>Tech Blog</h1>
+
+<h2>Post 1</h2>
+<p>Learning HTML is easy.</p>
+
+<h2>Post 2</h2>
+<p>CSS makes websites beautiful.</p>
+
+</body>
+</html>

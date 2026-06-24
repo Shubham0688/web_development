@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>My Portfolio</title>
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header>
+        <h1>Shubham's Portfolio</h1>
+        <p>Welcome to my personal webpage</p>
+        <hr>
+    </header>
+
+    <!-- About Me -->
+    <section>
+        <h2>About Me</h2>
+        <p>
+            Hello! My name is Shubham. I am a B.Tech student and learning 
+            Web Development. I enjoy coding and creating websites.
+        </p>
+    </section>
+
+    <!-- Education -->
+    <section>
+        <h2>Education</h2>
+        <table border="1">
+            <tr>
+                <th>Year</th>
+                <th>Course</th>
+                <th>Institute</th>
+            </tr>
+            <tr>
+                <td>2024</td>
+                <td>B.Tech</td>
+                <td>ABC College</td>
+            </tr>
+            <tr>
+                <td>2022</td>
+                <td>12th</td>
+                <td>XYZ School</td>
+            </tr>
+        </table>
+    </section>
+
+    <!-- Skills -->
+    <section>
+        <h2>Skills</h2>
+        <ul>
+            <li>HTML</li>
+            <li>Basic CSS</li>
+            <li>C Programming</li>
+            <li>Problem Solving</li>
+        </ul>
+    </section>
+
+    <!-- Projects -->
+    <section>
+        <h2>Projects</h2>
+        <ol>
+            <li>Portfolio Website</li>
+            <li>Simple Calculator (C)</li>
+            <li>College Mini Project</li>
+        </ol>
+    </section>
+
+    <!-- Contact -->
+    <section>
+        <h2>Contact Me</h2>
+        <form>
+            Name: <br>
+            <input type="text"><br><br>
+
+            Email: <br>
+            <input type="email"><br><br>
+
+            Message: <br>
+            <textarea rows="4" cols="30"></textarea><br><br>
+
+            <input type="submit" value="Send">
+        </form>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <hr>
+        <p>© 2026 Shubham. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>

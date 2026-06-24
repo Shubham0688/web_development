@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Restaurant</title>
+</head>
+<body>
+
+<h1>Royal Restaurant</h1>
+
+<h2>Menu</h2>
+<ul>
+<li>Paneer Butter Masala</li>
+<li>Biryani</li>
+<li>Noodles</li>
+</ul>
+
+<h2>Contact</h2>
+<p>Phone: 9876543210</p>
+
+</body>
+</html>

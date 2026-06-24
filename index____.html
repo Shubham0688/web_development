@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Happy Diwali Shubham</title>
+
+<style>
+body{
+    margin:0;
+    height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    background: linear-gradient(45deg,#ff512f,#f09819,#ffd200,#ff0080);
+    background-size:400% 400%;
+    animation:bg 8s infinite alternate;
+    font-family:Arial;
+    text-align:center;
+    color:white;
+}
+
+@keyframes bg{
+0%{background-position:left}
+100%{background-position:right}
+}
+
+h1{
+font-size:60px;
+text-shadow:0 0 20px yellow;
+}
+
+button{
+padding:15px 30px;
+font-size:20px;
+border:none;
+border-radius:10px;
+background:white;
+cursor:pointer;
+}
+
+</style>
+</head>
+
+<body>
+
+<div>
+<h1>🪔 Happy Diwali Shubham 🪔</h1>
+<button onclick="startWish()">Play Diwali Wish</button>
+</div>
+
+<audio id="music" loop>
+<source src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3" type="audio/mpeg">
+</audio>
+
+<script>
+
+function startWish(){
+
+let music = document.getElementById("music");
+music.play();
+
+let message = `Hello Shubham. 
+Wishing you and your family a very Happy Diwali.
+May this festival of lights bring happiness,
+success, prosperity and good health in your life.
+May your dreams shine as bright as the diyas.
+Enjoy the celebration, sweets and fireworks.
+Happy Diwali once again.`;
+
+let speech = new SpeechSynthesisUtterance(message);
+
+speech.rate = 0.85;
+speech.pitch = 1;
+speech.volume = 1;
+
+speechSynthesis.speak(speech);
+
+}
+
+</script>
+
+</body>
+</html>

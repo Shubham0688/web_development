@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Amazon Music Clone</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- HEADER -->
+<header class="header">
+    <div class="logo">amazon <span>music</span></div>
+    <nav>
+        <a href="#">Home</a>
+        <a href="#">Podcasts</a>
+        <a href="#">Library</a>
+        <a href="#">Browse</a>
+    </nav>
+</header>
+
+<!-- BANNER -->
+<section class="banner">
+    <h1>Unlimited Music Streaming</h1>
+    <p>Listen to millions of songs ad-free</p>
+    <button>Start Listening</button>
+</section>
+
+<!-- MUSIC SECTION -->
+<section class="music">
+    <h2>Popular Albums</h2>
+
+    <div class="cards">
+        <div class="card">
+            <div class="cover"></div>
+            <h3>Top Hits</h3>
+            <p>Various Artists</p>
+        </div>
+
+        <div class="card">
+            <div class="cover"></div>
+            <h3>Romantic</h3>
+            <p>Love Songs</p>
+        </div>
+
+        <div class="card">
+            <div class="cover"></div>
+            <h3>Workout</h3>
+            <p>Energy Boost</p>
+        </div>
+
+        <div class="card">
+            <div class="cover"></div>
+            <h3>Trending</h3>
+            <p>Global Hits</p>
+        </div>
+    </div>
+</section>
+
+<!-- FOOTER PLAYER -->
+<footer class="player">
+    <p>🎵 Playing Now: <strong>No song selected</strong></p>
+</footer>
+
+</body>
+</html>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* HEADER */
+.header {
+    background: #0f1111;
+    color: white;
+    padding: 15px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.logo span {
+    color: #1db954;
+}
+
+.header nav a {
+    color: white;
+    text-decoration: none;
+    margin-left: 20px;
+    font-size: 16px;
+}
+
+.header nav a:hover {
+    color: #1db954;
+}
+
+/* BANNER */
+.banner {
+    background: linear-gradient(to right, #1db954, #0f1111);
+    color: white;
+    text-align: center;
+    padding: 60px 20px;
+}
+
+.banner h1 {
+    font-size: 40px;
+}
+
+.banner p {
+    margin: 10px 0 20px;
+    font-size: 18px;
+}
+
+.banner button {
+    padding: 12px 30px;
+    border: none;
+    background: black;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 25px;
+}
+
+.banner button:hover {
+    background: #222;
+}
+
+/* MUSIC SECTION */
+.music {
+    padding: 40px;
+    background: #f5f5f5;
+}
+
+.music h2 {
+    margin-bottom: 20px;
+}
+
+.cards {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.card {
+    background: white;
+    width: 220px;
+    padding: 15px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    transition: transform 0.3s;
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+.cover {
+    height: 150px;
+    background: #ddd;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+.card h3 {
+    font-size: 18px;
+}
+
+.card p {
+    font-size: 14px;
+    color: gray;
+}
+
+/* PLAYER */
+.player {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background: #0f1111;
+    color: white;
+    text-align: center;
+    padding: 12px;
+}

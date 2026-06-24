@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>PixelPortfolio</title>
+  <style>
+    body {font-family: Arial; text-align:center;}
+    header {background:#333; color:white; padding:20px;}
+    section {margin:20px;}
+    .card {border:1px solid #ccc; padding:15px; margin:10px;}
+  </style>
+</head>
+<body>
+  <header>
+    <h1>My Portfolio</h1>
+  </header>
+
+  <section>
+    <div class="card">Project 1</div>
+    <div class="card">Project 2</div>
+  </section>
+</body>
+</html>

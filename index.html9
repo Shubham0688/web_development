@@ -1,0 +1,35 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Daily Energy Tracker</title>
+</head>
+<body>
+
+<h1>⚡ Daily Energy Tracker</h1>
+
+<table border="1" cellpadding="10">
+    <tr>
+        <th>Time</th>
+        <th>Energy Level</th>
+        <th>Reason</th>
+    </tr>
+    <tr>
+        <td>Morning</td>
+        <td>High</td>
+        <td>Fresh Mind</td>
+    </tr>
+    <tr>
+        <td>Afternoon</td>
+        <td>Medium</td>
+        <td>Post Lunch</td>
+    </tr>
+    <tr>
+        <td>Night</td>
+        <td>Low</td>
+        <td>Tired</td>
+    </tr>
+</table>
+
+</body>
+</html>
